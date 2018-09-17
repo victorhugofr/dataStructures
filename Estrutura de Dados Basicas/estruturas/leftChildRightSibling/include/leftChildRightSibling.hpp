@@ -60,8 +60,14 @@ class LeftChildRightSibling{
                 para imprimir os valores do nó filho, percorrendo
                 assim nossa "árvore"
                 */
-                if(n->child)
+                if(n->child){
+                    std::cout << std::endl; 
+                    std::cout << " | ";
+                    std::cout << std::endl;
                     print(n->child);
+                }
+
+                std::cout << " - ";
 
                 n = n->sibling;
             }
